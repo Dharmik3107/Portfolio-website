@@ -8,18 +8,6 @@ $delft-blue : #2F3061;
     width: 100vw;
     height: fit-content;
     padding-bottom: 50px;
-
-    @include md{
-        height: 3050px;
-    }
-
-    @include lg{
-        height: 2380px;
-    }
-
-    @include xl{
-        height: 2160px;
-    }
     .category-heading{
         font-family: $orbitron-font;
         font-size: 35px;

@@ -3,6 +3,7 @@
 $light-gray: #ECEFF1;
 $orbitron-font: 'Orbitron', sans-serif;
 $naples-yellow:#FFE66D;
+$gredient-color: linear-gradient(141deg, #adf1e0, #8075ff 28%, #ff7171 98%);
 
 .introduction-container{
     width: 100%;
@@ -21,6 +22,13 @@ $naples-yellow:#FFE66D;
         font-size: 35px;
         font-weight: 700;
 
+        &.active{
+          background-image: $gredient-color;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          cursor: default;
+        }
+
         @include md{
             font-size: 47px;
         }
@@ -36,7 +44,13 @@ $naples-yellow:#FFE66D;
         letter-spacing: 0.08em;
         margin: 20px 0px;
 
-        
+        &.active{
+          background-image: $gredient-color;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          cursor: default;
+        }
+
         @include md{
             font-size: 27px;
         }
@@ -57,7 +71,13 @@ $naples-yellow:#FFE66D;
             font-weight: 400;
             letter-spacing: 0.1em;
 
-            
+            &.active{
+              background-image: $gredient-color;
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              cursor: default;
+            }
+
             @include md{
                 font-size: 27px;
             }
@@ -138,3 +158,5 @@ $naples-yellow:#FFE66D;
       transform: scale3d(1, 1, 1);
     }
   }
+
+  
