@@ -36,12 +36,12 @@ $delft-blue : #2F3061;
             border: 2px solid transparent;
             transition: 300ms all;
 
-            &:hover{
+            &:hover, &:focus{
                 background-color: transparent;
                 border: 2px solid $naples-yellow;
             }
 
-            &:hover path{
+            &:hover path, &:focus path{
                 fill: $naples-yellow;
             }
 

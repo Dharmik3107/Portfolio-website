@@ -1,4 +1,4 @@
-window.addEventListener("load", () => {
+document.addEventListener("load", () => {
   VANTA.BIRDS({
     el: "#birds",
     mouseControls: true,
