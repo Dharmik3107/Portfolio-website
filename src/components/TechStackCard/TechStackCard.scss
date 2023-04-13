@@ -1,0 +1,41 @@
+@import "../../mixin.scss";
+
+$light-gray: #ECEFF1;
+$naples-yellow:#FFE66D;
+$opensans-font:'Open Sans', sans-serif;
+$onHover-color:#f6f6f6;
+
+.skill-card{
+    width: 100px;
+    height: 100px;
+    background-color: $light-gray;
+    border-radius: 20px;
+    box-shadow: none;
+    transition: 300ms all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: grayscale(100%);
+
+    @include md{
+        width: 200px;
+        height: 200px;
+        
+    }
+
+    &:hover{
+        background-color: $onHover-color;
+        box-shadow: 0 0 0 0 #e6ebef, 0 6px 34px 0 rgba(0, 0, 0, 0.25);
+        scale: 1.02;
+        filter: none;
+    }
+
+    img{
+        max-width: 70px;
+        height: 50px;
+        @include md{
+            max-width: 130px;
+            height: 100px;
+        }
+    }
+}

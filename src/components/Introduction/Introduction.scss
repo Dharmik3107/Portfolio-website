@@ -1,0 +1,140 @@
+@import "../../mixin.scss";
+
+$light-gray: #ECEFF1;
+$orbitron-font: 'Orbitron', sans-serif;
+$naples-yellow:#FFE66D;
+
+.introduction-container{
+    width: 100%;
+    height: 720px;
+    max-width: 700px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: $orbitron-font;
+    color: $light-gray;
+
+    h1{
+        letter-spacing: 0.05em;
+        font-size: 35px;
+        font-weight: 700;
+
+        @include md{
+            font-size: 47px;
+        }
+
+        @include lg{
+            font-size: 60px;
+        }
+    }
+
+    h4{
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: 0.08em;
+        margin: 20px 0px;
+
+        
+        @include md{
+            font-size: 27px;
+        }
+
+        @include lg{
+            font-size: 35px;
+        }
+    }
+
+    .location-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        h6{
+            font-size: 13px;
+            font-weight: 400;
+            letter-spacing: 0.1em;
+
+            
+            @include md{
+                font-size: 27px;
+            }
+
+            @include lg{
+                font-size: 20px;
+            }
+
+        }
+
+        svg{
+            height: 15px;
+
+            
+            @include md{
+                height: 22px;
+            }
+
+            @include lg{
+                height: 22px;
+            }
+        }
+    }
+    Button{
+        margin-top: 20px;
+    }
+}
+
+.rubberBand {
+    display: inline-block;
+    transition: 0.6s all;
+  }
+  .rubberBand:hover {
+    cursor: default;
+    animation: rubberBand 0.6s linear 1;
+    color: $naples-yellow;
+  }
+  @keyframes rubberBand {
+    0% {
+      -webkit-transform: scale3d(1, 1, 1);
+      -ms-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  
+    30% {
+      -webkit-transform: scale3d(1.25, 0.75, 1);
+      -ms-transform: scale3d(1.25, 0.75, 1);
+      transform: scale3d(1.25, 0.75, 1);
+    }
+  
+    40% {
+      -webkit-transform: scale3d(0.75, 1.25, 1);
+      -ms-transform: scale3d(0.75, 1.25, 1);
+      transform: scale3d(0.75, 1.25, 1);
+    }
+  
+    50% {
+      -webkit-transform: scale3d(1.15, 0.85, 1);
+      -ms-transform: scale3d(1.15, 0.85, 1);
+      transform: scale3d(1.15, 0.85, 1);
+    }
+  
+    65% {
+      -webkit-transform: scale3d(0.95, 1.05, 1);
+      -ms-transform: scale3d(0.95, 1.05, 1);
+      transform: scale3d(0.95, 1.05, 1);
+    }
+  
+    75% {
+      -webkit-transform: scale3d(1.05, 0.95, 1);
+      -ms-transform: scale3d(1.05, 0.95, 1);
+      transform: scale3d(1.05, 0.95, 1);
+    }
+  
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+      -ms-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  }

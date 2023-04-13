@@ -1,0 +1,60 @@
+@import "../../mixin.scss";
+
+$light-gray: #ECEFF1;
+$naples-yellow:#FFE66D;
+$opensans-font:'Open Sans', sans-serif;
+
+.default-button{
+    width: 100%;
+    max-width: 250px;
+    height: 50px;
+    border: 2px solid transparent;
+    background-color: white;
+    border-radius: 10px;
+    font-family: $opensans-font;
+    font-size: 18px;
+    transition: 300ms all;
+
+    &:hover{
+        background-color: transparent;
+        border: 2px solid black;
+        color: black;
+    }
+}
+
+.yellow-button{
+    width: 100%;
+    max-width: 250px;
+    height: 50px;
+    border: 2px solid transparent;
+    background-color: $naples-yellow;
+    border-radius: 10px;
+    font-family: $opensans-font;
+    font-size: 18px;
+    transition: 300ms all;
+
+    &:hover{
+        background-color: transparent;
+        border: 2px solid $naples-yellow;
+        color: $naples-yellow;
+    }
+}
+
+.inverted-button{
+    width: 100%;
+    max-width: 250px;
+    height: 50px;
+    border: 2px solid $light-gray;
+    background-color: transparent;
+    border-radius: 10px;
+    font-family: $opensans-font;
+    font-size: 18px;
+    transition: 300ms all;
+    color: $light-gray;
+
+    &:hover{
+        background-color: $light-gray;
+        border: 2px solid transparent;
+        color: #000;
+    }
+}

@@ -1,0 +1,49 @@
+@import "../../mixin.scss";
+
+$orbitron-font: 'Orbitron', sans-serif;
+$delft-blue : #2F3061;
+
+.personal-container{
+    margin-top: 100px;
+    width: 100vw;
+    height: fit-content;
+    padding-bottom: 50px;
+
+    @include md{
+        height: 3050px;
+    }
+
+    @include lg{
+        height: 2380px;
+    }
+
+    @include xl{
+        height: 2160px;
+    }
+    .category-heading{
+        font-family: $orbitron-font;
+        font-size: 35px;
+        text-align: center;
+        margin-bottom: 80px;
+        color: $delft-blue;
+    }   
+
+    .cards-container{
+        width: 100%;
+        max-width: 1500px;
+        margin: 0px auto;
+    }
+
+    .stack-container{
+        width: 100%;
+        max-width: 1200px;
+        margin: 0px auto;
+        padding: 0px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        
+    }
+}

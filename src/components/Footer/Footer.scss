@@ -1,0 +1,63 @@
+@import "../../mixin.scss";
+
+$light-gray: #ECEFF1;
+$naples-yellow:#FFE66D;
+$opensans-font:'Open Sans', sans-serif;
+$onHover-color:#f6f6f6;
+$delft-blue : #2F3061;
+
+.footer-container{
+    width: 100%;
+    max-width: 1500px;
+    height: 200px;
+    background-color: $delft-blue;
+    margin: 0px auto;
+    border-radius: 40px 40px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+
+    .social-container{
+        display: flex;
+        width: 170px;
+        justify-content: space-between;
+        align-items: center;
+
+        a{
+            width: 50px;
+            height: 50px;
+            background-color: $naples-yellow;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid transparent;
+            transition: 300ms all;
+
+            &:hover{
+                background-color: transparent;
+                border: 2px solid $naples-yellow;
+            }
+
+            &:hover path{
+                fill: $naples-yellow;
+            }
+
+            svg{
+                height: 20px;
+
+                path{
+                    fill: white;
+                    transition: 300ms all;
+                }
+            }
+        }
+    }
+
+    .copyrights{
+        color: $light-gray;
+        font-family: $opensans-font;
+    }
+}
