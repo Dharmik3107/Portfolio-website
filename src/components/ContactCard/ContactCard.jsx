@@ -3,7 +3,6 @@ import "./ContactCard.scss";
 import InputField from "../InputField/InputField";
 import TextArea from "./../TextArea/TextArea";
 import Button, { BUTTON_CLASSES } from "../Button/Button";
-import { mailer } from "../../utils/mailer";
 
 const initialFormValue = {
 	personName: "",
