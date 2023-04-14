@@ -8,6 +8,7 @@ $delft-blue : #2F3061;
 $gredient-color: linear-gradient(141deg, #adf1e0, #8075ff 28%, #ff7171 98%);
 
 .navigation-container{
+    position: relative;
     width: 100%;
     height: 80px;
     max-width: 1500px;

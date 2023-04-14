@@ -1,0 +1,15 @@
+$orbitron-font: 'Orbitron', sans-serif;
+$delft-blue : #2F3061;
+.about-container{
+    margin-top: 100px;
+    width: 100vw;
+    height: fit-content;
+    padding-bottom: 50px;
+    .category-heading{
+        font-family: $orbitron-font;
+        font-size: 35px;
+        text-align: center;
+        margin-bottom: 80px;
+        color: $delft-blue;
+    }   
+}

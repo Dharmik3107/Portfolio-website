@@ -1,0 +1,61 @@
+@import "../../mixin.scss";
+
+$light-gray: #ECEFF1;
+$naples-yellow:#FFE66D;
+$opensans-font:'Open Sans', sans-serif;
+$onHover-color:#f6f6f6;
+$delft-blue : #2F3061;
+$gredient-color: linear-gradient(141deg, #adf1e0, #8075ff 28%, #ff7171 98%);
+
+.about-card{
+    width: 95%;
+    height: fit-content;
+    max-width: 900px;
+    background-color: $light-gray;
+    margin: 0px auto;
+    padding: 20px;
+    font-family: $opensans-font;
+    border-radius: 20px;
+    transition: 300ms all ease-in-out;
+    box-shadow: none;
+    position: relative;
+    overflow: hidden;
+
+    &:hover{
+        box-shadow: 0 0 0 0 #e6ebef, 0 6px 34px 0 rgba(0, 0, 0, 0.25);
+        background-color: $onHover-color;
+        scale: 1.02;
+    }
+    
+    .ram{
+        color: salmon;
+    }
+
+    h3{
+        &:first-child{
+            padding-left: 5px;
+        }
+    }
+    .graduation{
+        margin-top: 30px;
+        font-weight: 600;
+    }
+    h6{
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .career-switch{
+        margin-top: 30px;
+        font-size: 15px;
+    }
+    p{
+        margin: 10px auto;
+    }
+    a{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        text-decoration: none;
+    }
+}

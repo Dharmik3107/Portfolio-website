@@ -1,11 +1,10 @@
-import React from "react";
-import { useLocation } from "react-router-dom";
+import React, { useContext } from "react";
+import { ToggleContext } from "../../contexts/toggleContext";
 
 const Span = ({ text }) => {
-	const path = useLocation().pathname;
-	const isProfessional = path === "/professional";
+	const { isToggled } = useContext(ToggleContext);
 
-	return <span className={!isProfessional ? "rubberBand" : ""}>{text}</span>;
+	return <span className={!isToggled ? "rubberBand" : ""}>{text}</span>;
 };
 
 export default Span;

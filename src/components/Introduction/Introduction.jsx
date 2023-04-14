@@ -5,6 +5,7 @@ import { BUTTON_CLASSES } from "../Button/Button";
 import { ToggleContext } from "../../contexts/toggleContext";
 import "./Introduction.scss";
 import Span from "../Span/Span";
+import { Link } from "react-router-dom";
 
 const Introduction = () => {
 	const { isToggled } = useContext(ToggleContext);
@@ -34,7 +35,9 @@ const Introduction = () => {
 				<h6 className={`${isToggled ? "active" : ""}`}>Surat,Gujarat</h6>
 			</div>
 
-			<Button text="Hire Me!" buttonType={BUTTON_CLASSES.yellow} />
+			<Link to="/contact">
+				<Button text="Hire Me!" buttonType={BUTTON_CLASSES.yellow} />
+			</Link>
 		</div>
 	);
 };
