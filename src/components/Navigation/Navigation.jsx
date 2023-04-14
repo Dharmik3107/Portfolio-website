@@ -4,7 +4,7 @@ import { ReactComponent as DIcon } from "../../assets/DIcon.svg";
 import { ReactComponent as Hamburger } from "../../assets/Hamburger.svg";
 import { ToggleContext } from "../../contexts/toggleContext";
 import Navbar from "../Navbar/Navbar";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Navigation = () => {
 	const path = useLocation().pathname;
@@ -25,9 +25,11 @@ const Navigation = () => {
 
 	return (
 		<div className="navigation-container">
-			<button className="round-container">
-				<DIcon />
-			</button>
+			<Link to="/">
+				<button className="round-container">
+					<DIcon />
+				</button>
+			</Link>
 			{isHomePage && (
 				<div className="toggle-container">
 					<div className={`personal-button ${isToggled ? "professional-button" : ""}`}></div>
