@@ -1,4 +1,6 @@
-const notify_API = `${process.env.BACKEND_LINK}/api/notify`;
+const BACKEND = "https://portfolio-backend-cpvv.onrender.com";
+
+const notify_API = `${BACKEND}/api/notify`;
 
 export const notify = async (data) => {
 	console.log(JSON.stringify(data));

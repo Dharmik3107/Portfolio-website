@@ -5,10 +5,13 @@ import { BUTTON_CLASSES } from "../Button/Button";
 import { ToggleContext } from "../../contexts/toggleContext";
 import "./Introduction.scss";
 import Span from "../Span/Span";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Introduction = () => {
 	const { isToggled } = useContext(ToggleContext);
+
+	const path = useLocation().pathname;
+	const isContactPage = path === "/contact";
 
 	return (
 		<div className="introduction-container">
@@ -35,9 +38,11 @@ const Introduction = () => {
 				<h6 className={`${isToggled ? "active" : ""}`}>Surat,Gujarat</h6>
 			</div>
 
-			<Link to="/contact">
-				<Button text="Hire Me!" buttonType={BUTTON_CLASSES.yellow} />
-			</Link>
+			{!isContactPage && (
+				<Link to="/contact">
+					<Button text="Hire Me!" buttonType={BUTTON_CLASSES.yellow} />
+				</Link>
+			)}
 		</div>
 	);
 };
