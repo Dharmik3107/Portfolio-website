@@ -37,7 +37,7 @@ $onHover-color:#f6f6f6;
 
     .porject-information{
         width: 100%;
-        height: 440px;
+        height: 500px;
         display: flex;
         position: absolute;
         top: 0px;
@@ -101,8 +101,8 @@ $onHover-color:#f6f6f6;
         position: absolute;
         bottom: 0px;
         right: 0px;
-        width: 350px;
-        height: 350px;
+        width: 300px;
+        height: 300px;
 
         @include md{
             width: 400px;

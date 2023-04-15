@@ -59,5 +59,11 @@ $delft-blue : #2F3061;
     .copyrights{
         color: $light-gray;
         font-family: $opensans-font;
+        font-size: 15px;
+        text-align: center;
+
+        @include md{
+            font-size: 18px;
+        }
     }
 }
