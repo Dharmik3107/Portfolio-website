@@ -18,7 +18,7 @@ export const projects = [
 	{
 		logoUrl: StudyHelperAI,
 		title: "Study Helper AI",
-		subtitle: "AI Based Project - Side Project (Under Development)",
+		subtitle: "AI Based Project - Side Project",
 		description: "Study Helper AI uses ChatGPT AI to assist students in solving their subject-related doubts via chat.",
 		websiteUrl: "https://chat-study-helper.netlify.app/",
 		githubUrl: "https://github.com/Dharmik3107/Study-Helper-AI-frontend",
